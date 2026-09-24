@@ -3,7 +3,7 @@ import { soundManager } from "../utils/audio";
 
 const sections = [
   { id: "hero", label: "Awal" },
-  { id: "memories", label: "Kenangan" },
+  { id: "memories", label: "Sosokmu" },
   { id: "qualities", label: "Tentang Kamu" },
   { id: "gift", label: "Kejutan" },
   { id: "letter", label: "Surat" },

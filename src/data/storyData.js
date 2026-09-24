@@ -1,3 +1,6 @@
+import ching1 from "../assets/ching.png";
+import ching2 from "../assets/ching2.png";
+
 // Konfigurasi Cerita & Konten (Bahasa Indonesia)
 // Kamu bisa mengubah foto, teks, dan pesan langsung di sini!
 
@@ -24,46 +27,32 @@ export const storyData = {
     subtext: "gulir perlahan ke bawah ya...",
   },
 
+  memoriesHeader: {
+    badge: "Tentang Dirimu ✦",
+    title: "Di Setiap Sudut Pandang",
+    subtitle: "bukan tentang foto kita berdua, tapi tentang betapa keren, hebat, dan menginspirasinya kamu di mataku.",
+  },
+
   memories: [
     {
       id: 1,
       number: "01",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80",
-      caption: "salah satu momen sederhana yang selalu layak dikenang.",
-      subCaption: "hangat, tulus, dan apa adanya.",
-      date: "Sebuah sore yang tenang",
-      fullStory: "Momen yang selalu mengingatkanku betapa nyamannya bisa duduk, berbincang santai, dan membiarkan waktu berjalan lebih pelan bersamamu.",
+      image: ching1,
+      caption: "kamu selalu punya aura keren dan tangguh.",
+      subCaption: "mandiri, berdedikasi tinggi, dan selalu berani melangkah.",
+      date: "Sosok yang Hebat",
+      fullStory: "Setiap kali memperhatikan caramu bekerja dan menyelesaikan berbagai tantangan, aku selalu kagum. Kamu adalah orang yang berprinsip, pekerja keras, dan punya pesona tersendiri yang membuat siapapun hormat padamu.",
       rotation: -2,
     },
     {
       id: 2,
       number: "02",
-      image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80",
-      caption: "dan entah bagaimana, ini jadi salah satu foto favoritku.",
-      subCaption: "senyum yang selalu berhasil menghangatkan suasana.",
-      date: "Hari yang menyenangkan",
-      fullStory: "Kamu punya energi positif yang langka—selalu berhasil membawa tawa bagi siapa pun yang beruntung bisa berada di dekatmu.",
-      rotation: 2.5,
-    },
-    {
-      id: 3,
-      number: "03",
-      image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80",
-      caption: "kenangan tenang yang selalu berhasil bikin tersenyum.",
-      subCaption: "spontan, tanpa rekayasa, dan nyata.",
-      date: "Momen kecil yang manis",
-      fullStory: "Momen yang tidak direncanakan sering kali justru jadi kenangan yang paling lama tersimpan di dalam hati.",
-      rotation: -1.5,
-    },
-    {
-      id: 4,
-      number: "04",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80",
-      caption: "selalu bersyukur untuk setiap tawa dan cerita yang pernah kita bagi.",
-      subCaption: "semoga kita bisa membuat lebih banyak kenangan indah lagi.",
-      date: "Di bawah langit senja",
-      fullStory: "Terima kasih untuk setiap percakapan, mulai dari obrolan ringan sampai obrolan mendalam yang penuh arti.",
-      rotation: 1.8,
+      image: ching2,
+      caption: "dan di balik ketegasanmu, selalu terpancar ketulusan yang luar biasa.",
+      subCaption: "sosok yang istimewa, membumi, dan selalu menginspirasi.",
+      date: "Inspirasi Nyata",
+      fullStory: "Nggak banyak orang yang bisa tetap rendah hati, hangat, dan bersinar terang di saat yang bersamaan. Melihatmu terus bertumbuh dan melangkah maju adalah hal yang selalu membuatku bangga dan kagum.",
+      rotation: 2,
     },
   ],
 

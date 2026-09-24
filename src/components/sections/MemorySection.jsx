@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Camera, Sparkles, X, Calendar, Maximize2 } from "lucide-react";
+import { Sparkles, X, Calendar, Maximize2 } from "lucide-react";
 import { storyData } from "../../data/storyData";
 import { soundManager } from "../../utils/audio";
 
 export default function MemorySection() {
-  const { memories } = storyData;
+  const { memories, memoriesHeader } = storyData;
   const [activeMemory, setActiveMemory] = useState(null);
 
   const handleOpenMemory = (memory) => {
@@ -23,15 +23,15 @@ export default function MemorySection() {
         transition={{ duration: 1 }}
         className="text-center mb-24 space-y-4"
       >
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-panel border border-[#C9A7FF]/20 text-xs tracking-widest uppercase text-[#C9A7FF]">
-          <Camera className="w-3.5 h-3.5" />
-          <span>Kepingan Kenangan</span>
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-panel border border-[#C9A7FF]/20 text-xs tracking-widest uppercase text-[#C9A7FF]">
+          <Sparkles className="w-3.5 h-3.5 text-[#C9A7FF]" />
+          <span>{memoriesHeader?.badge || "Tentang Dirimu ✦"}</span>
         </div>
         <h2 className="font-serif text-3xl sm:text-4xl text-[#F5F1EA] font-normal">
-          Rekaman Momen Indah
+          {memoriesHeader?.title || "Di Setiap Sudut Pandang"}
         </h2>
-        <p className="text-sm sm:text-base text-[#A49CB5] max-w-md mx-auto italic font-serif">
-          kumpulan momen sederhana yang membuat hari-hari biasa terasa begitu bermakna.
+        <p className="text-sm sm:text-base text-[#A49CB5] max-w-lg mx-auto italic font-serif leading-relaxed">
+          {memoriesHeader?.subtitle || "bukan tentang foto kita berdua, tapi tentang betapa keren dan hebatnya kamu di mataku."}
         </p>
       </motion.div>
 
