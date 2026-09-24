@@ -30,7 +30,7 @@ export const storyData = {
   memoriesHeader: {
     badge: "Tentang Dirimu ✦",
     title: "Di Setiap Sudut Pandang",
-    subtitle: "bukan tentang foto kita berdua, tapi tentang betapa keren, hebat, dan menginspirasinya kamu di mataku.",
+    subtitle: "catatan kecil tentang betapa keren, hebat, dan mengagumkannya kamu di mataku.",
   },
 
   memories: [

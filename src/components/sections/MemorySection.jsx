@@ -31,7 +31,7 @@ export default function MemorySection() {
           {memoriesHeader?.title || "Di Setiap Sudut Pandang"}
         </h2>
         <p className="text-sm sm:text-base text-[#A49CB5] max-w-lg mx-auto italic font-serif leading-relaxed">
-          {memoriesHeader?.subtitle || "bukan tentang foto kita berdua, tapi tentang betapa keren dan hebatnya kamu di mataku."}
+          {memoriesHeader?.subtitle || "catatan kecil tentang betapa keren, hebat, dan mengagumkannya kamu di mataku."}
         </p>
       </motion.div>
 
